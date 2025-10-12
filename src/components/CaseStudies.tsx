@@ -14,7 +14,7 @@ const caseStudies = [
     description: 'I designed the PhD Management module for Digiicampus, bringing clarity to complex academic workflows. It enables scholars, supervisors, and committees to collaborate seamlessly across proposals, evaluations, and compliance processes.',
     thumbnail: phdManagementThumb,
     bgColor: '#F1F5F9',
-    link: '#' // Placeholder - will be updated later
+    link: 'https://digiicampus.com/phd-management/'
   },
   {
     id: 2,
@@ -25,7 +25,7 @@ const caseStudies = [
     description: 'I reimagined the online experience for Hotel Madhuvan Serai, a design that feels as welcoming as the stay itself. Clear navigation, elegant visuals, and effortless booking now bring its hospitality to life online.',
     thumbnail: hotelMadhuvanThumb,
     bgColor: '#FEF3E2',
-    link: '#' // Placeholder - will be updated later
+    link: 'https://www.behance.net/gallery/226559313/Hotel-Website-Redesign-Madhuvan-Serai'
   },
   {
     id: 3,
@@ -36,7 +36,7 @@ const caseStudies = [
     description: 'I designed Happy Hop, an e-commerce platform for kids\' clothing that feels playful yet practical. Every part of the experience, from discovery to checkout, was crafted for trust, clarity, and smooth navigation.',
     thumbnail: happyHopThumb,
     bgColor: '#E0F2F1',
-    link: '#' // Placeholder - will be updated later
+    link: 'https://www.behance.net/gallery/214599385/Happy-Hop-E-commerce-Website-Case-Study'
   },
   {
     id: 4,
@@ -47,7 +47,7 @@ const caseStudies = [
     description: 'What began as a cluttered academic app became one of my most defining projects. I redesigned the Digiicampus app to feel intuitive, cohesive, and responsive, helping students focus on learning instead of navigating chaos.',
     thumbnail: digiicampusAppThumb,
     bgColor: '#FEE2E2',
-    link: '#' // Placeholder - will be updated later
+    link: 'https://www.behance.net/gallery/211133883/Digiicampus-app-redesign-UI-UX-case-Study'
   }
 ];
 
@@ -98,7 +98,7 @@ export default function CaseStudies({ isProfessional: _isProfessional }: CaseStu
                 className="group block bg-white rounded-2xl overflow-hidden border-2 border-gray-100 hover:border-[#243E89] transition-all duration-300 hover:shadow-2xl"
                 onClick={(e) => {
                   e.preventDefault();
-                  console.log(`Clicked case study: ${project.title}`);
+                  window.open(project.link, '_blank', 'noopener,noreferrer');
                 }}
               >
                 <div className="flex flex-col md:flex-row md:h-72">
