@@ -5,10 +5,9 @@
 import heroPortrait1 from '../assets/8f59f71c5b051872ab803dd6433d5e3e32b814c3.png';
 import heroPortrait2 from '../assets/c6d3f61d765126f6c9120bc5b95bed2ae653b446.png';
 import heroPortrait3 from '../assets/db6354578bb104fd2b90528298606ef59be69029.png';
-// Placeholders for remaining 3 images - awaiting upload
-import heroPortrait4 from '../assets/8f59f71c5b051872ab803dd6433d5e3e32b814c3.png';
-import heroPortrait5 from '../assets/c6d3f61d765126f6c9120bc5b95bed2ae653b446.png';
-import heroPortrait6 from '../assets/db6354578bb104fd2b90528298606ef59be69029.png';
+import heroPortrait4 from '../assets/hero5.jpeg';
+import heroPortrait5 from '../assets/hero6.jpeg';
+import heroPortrait6 from '../assets/hero7.jpeg';
 
 export interface HeroCarouselImage {
   heroId: string;
