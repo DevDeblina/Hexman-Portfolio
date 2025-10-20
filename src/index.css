@@ -1401,7 +1401,7 @@
 
   @media (width >= 48rem) {
     .md\:h-72 {
-      height: calc(var(--spacing) * 72);
+      height: calc(var(--spacing) * 85);
     }
   }
 
