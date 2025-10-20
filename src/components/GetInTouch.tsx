@@ -138,80 +138,76 @@ export default function GetInTouch({ isProfessional }: GetInTouchProps) {
 
         {isProfessional ? (
           // Work Page - Remove primary CTA, only show tertiary CTA to Life page
-          <ScrollReveal animation="fadeUp" delay={0.4}>
-            <div className="text-center">
-              <p 
-                className="mb-4"
-                style={{
-                  fontSize: '1.125rem',
-                  fontWeight: 500,
-                  color: '#64748B'
-                }}
-              >
-                Curious about the person behind Hexman?
-              </p>
-              <a
-                href="#life"
-                onClick={(e) => {
-                  e.preventDefault();
-                  // Switch to Life page and scroll to top
-                  const themeToggle = document.querySelector('[data-theme-toggle]') as HTMLElement;
-                  if (themeToggle) {
-                    themeToggle.click();
-                    setTimeout(() => {
-                      window.scrollTo({ top: 0, behavior: 'smooth' });
-                    }, 100);
-                  }
-                }}
-                className="inline-flex items-center gap-2 text-[#243E89] hover:text-[#243E89] transition-colors duration-300 group"
-                style={{
-                  fontSize: '1.125rem',
-                  fontWeight: 600
-                }}
-              >
-                Explore my Life Page
-                <ArrowRight className="group-hover:translate-x-1 transition-transform duration-300" size={20} />
-              </a>
-            </div>
-          </ScrollReveal>
+          <div className="text-center">
+            <p 
+              className="mb-4"
+              style={{
+                fontSize: '1.125rem',
+                fontWeight: 500,
+                color: '#64748B'
+              }}
+            >
+              Curious about the person behind Hexman?
+            </p>
+            <a
+              href="#life"
+              onClick={(e) => {
+                e.preventDefault();
+                // Switch to Life page and scroll to top
+                const themeToggle = document.querySelector('[data-theme-toggle]') as HTMLElement;
+                if (themeToggle) {
+                  themeToggle.click();
+                  setTimeout(() => {
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                  }, 100);
+                }
+              }}
+              className="inline-flex items-center gap-2 text-[#243E89] hover:text-[#243E89] transition-colors duration-300 group"
+              style={{
+                fontSize: '1.125rem',
+                fontWeight: 600
+              }}
+            >
+              Explore my Life Page
+              <ArrowRight className="group-hover:translate-x-1 transition-transform duration-300" size={20} />
+            </a>
+          </div>
         ) : (
           // Life Page - Show footer text and tertiary CTA to Work page
-          <ScrollReveal animation="fadeUp" delay={0.4}>
-            <div className="text-center">
-              <p 
-                className="mb-4"
-                style={{
-                  fontSize: '1.125rem',
-                  fontWeight: 500,
-                  color: '#64748B'
-                }}
-              >
-                Get to know my professional life
-              </p>
-              <a
-                href="#work"
-                onClick={(e) => {
-                  e.preventDefault();
-                  // Switch to Work page and scroll to top
-                  const themeToggle = document.querySelector('[data-theme-toggle]') as HTMLElement;
-                  if (themeToggle) {
-                    themeToggle.click();
-                    setTimeout(() => {
-                      window.scrollTo({ top: 0, behavior: 'smooth' });
-                    }, 100);
-                  }
-                }}
-                className="inline-flex items-center gap-2 text-[#243E89] hover:text-[#243E89] transition-colors duration-300 group"
-                style={{
-                  fontSize: '1.125rem',
-                  fontWeight: 600
-                }}
-              >
-                Go to Work Page
-                <ArrowRight className="group-hover:translate-x-1 transition-transform duration-300" size={20} />
-              </a>
-            </div>
-          </ScrollReveal>
+          <div className="text-center">
+            <p 
+              className="mb-4"
+              style={{
+                fontSize: '1.125rem',
+                fontWeight: 500,
+                color: '#64748B'
+              }}
+            >
+              Get to know my professional life
+            </p>
+            <a
+              href="#work"
+              onClick={(e) => {
+                e.preventDefault();
+                // Switch to Work page and scroll to top
+                const themeToggle = document.querySelector('[data-theme-toggle]') as HTMLElement;
+                if (themeToggle) {
+                  themeToggle.click();
+                  setTimeout(() => {
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                  }, 100);
+                }
+              }}
+              className="inline-flex items-center gap-2 text-[#243E89] hover:text-[#243E89] transition-colors duration-300 group"
+              style={{
+                fontSize: '1.125rem',
+                fontWeight: 600
+              }}
+            >
+              Go to Work Page
+              <ArrowRight className="group-hover:translate-x-1 transition-transform duration-300" size={20} />
+            </a>
+          </div>
         )}
       </div>
     </section>
