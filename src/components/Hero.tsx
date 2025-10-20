@@ -50,7 +50,7 @@ export default function Hero({ isProfessional: _isProfessional }: HeroProps) {
                 lineHeight: 1.6
               }}
             >
-              I design Exceptional web, app, and SaaS experiences that users love and enterprises trust
+              I design exceptional web, app, and SaaS experiences that users love and enterprises trust
             </p>
 
             {/* Action Buttons */}
