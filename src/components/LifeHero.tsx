@@ -48,7 +48,7 @@ export default function LifeHero({ isProfessional: _isProfessional }: LifeHeroPr
                 lineHeight: 1.6
               }}
             >
-              I love doing things that give me real dopamine. Hitting the gym regularly, reading books often, watching anime, and getting lost in movies or shows that treat direction like art are my kind of therapy.
+              I love doing things that give me real dopamine. <strong>Hitting the gym regularly, reading books often, watching anime, and getting lost in movies or shows that treat direction like art</strong> are my kind of therapy.
               <br /><br />
               Before design, I spent years in competitive gaming, where I learned focus, teamwork, and strategy.
             </p>
