@@ -1,6 +1,6 @@
 {
   "buildCommand": "npm run build",
-  "installCommand": "npm ci",
+  "installCommand": "(npm ci) || (sleep 10 && npm ci) || (sleep 30 && npm ci)",
   "outputDirectory": "dist",
   "framework": "vite",
   "rewrites": [
