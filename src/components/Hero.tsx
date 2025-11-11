@@ -1,6 +1,6 @@
 import { Button } from './ui/button';
 import { ChevronDown } from 'lucide-react';
-import designerIllustration from '../assets/df5165bdd31dcd38e39e8e46d087b5e9343059f7.png';
+import heroImg from '../assets/hero_img.png';
 
 interface HeroProps {
   isProfessional: boolean;
@@ -75,7 +75,7 @@ export default function Hero({ isProfessional: _isProfessional }: HeroProps) {
           {/* Right Illustration */}
           <div className="flex justify-center lg:justify-end order-1 lg:order-2 w-full">
             <img 
-              src={designerIllustration} 
+              src={heroImg} 
               alt="Hexman - Product Designer Illustration" 
               className="w-full max-w-[200px] sm:max-w-[260px] md:max-w-[320px] lg:max-w-[380px] h-auto object-contain"
             />
