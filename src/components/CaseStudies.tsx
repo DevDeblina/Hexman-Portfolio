@@ -93,14 +93,7 @@ export default function CaseStudies({ isProfessional: _isProfessional }: CaseStu
         <div className="space-y-8">
           {caseStudies.map((project, index) => (
             <ScrollReveal key={project.id} animation="fadeUp" delay={index * 0.1}>
-              <a
-                href={project.link}
-                className="group block bg-white rounded-2xl overflow-hidden border-2 border-gray-100 hover:border-[#243E89] transition-all duration-300 hover:shadow-2xl"
-                onClick={(e) => {
-                  e.preventDefault();
-                  window.open(project.link, '_blank', 'noopener,noreferrer');
-                }}
-              >
+              <div className="group block bg-white rounded-2xl overflow-hidden border-2 border-gray-100 transition-all duration-300">
                 <div className="flex flex-col md:flex-row md:h-72">
                   {/* Project Thumbnail - Left Side */}
                   <div 
@@ -109,7 +102,7 @@ export default function CaseStudies({ isProfessional: _isProfessional }: CaseStu
                     <img
                       src={project.thumbnail}
                       alt={project.title}
-                      className="w-full h-full object-cover object-top transform group-hover:scale-105 transition-transform duration-500"
+                      className="w-full h-full object-cover object-top"
                     />
                   </div>
 
@@ -139,7 +132,7 @@ export default function CaseStudies({ isProfessional: _isProfessional }: CaseStu
 
                     {/* Title */}
                     <h3 
-                      className="mb-3 group-hover:text-[#243E89] transition-colors duration-300"
+                      className="mb-3"
                       style={{
                         fontSize: 'clamp(1.375rem, 2vw, 1.75rem)',
                         fontWeight: 700,
@@ -168,7 +161,7 @@ export default function CaseStudies({ isProfessional: _isProfessional }: CaseStu
 
                     {/* Description */}
                     <p 
-                      className="text-gray-600"
+                      className="text-gray-600 mb-4"
                       style={{
                         fontSize: 'clamp(0.9375rem, 1.05vw, 1rem)',
                         lineHeight: 1.7
@@ -176,9 +169,28 @@ export default function CaseStudies({ isProfessional: _isProfessional }: CaseStu
                     >
                       {project.description}
                     </p>
+
+                    {/* View Case Study Link */}
+                    <a
+                      href={project.link}
+                      onClick={(e) => {
+                        e.preventDefault();
+                        window.open(project.link, '_blank', 'noopener,noreferrer');
+                      }}
+                      className="inline-block text-blue-600 hover:text-blue-700 transition-colors duration-200"
+                      style={{
+                        fontSize: 'clamp(0.9375rem, 1.05vw, 1.15rem)',
+                        color: '#243e89',
+                        fontWeight: 500,
+                        textDecoration: 'underline',
+                        textUnderlineOffset: '3px'
+                      }}
+                    >
+                      View case study
+                    </a>
                   </div>
                 </div>
-              </a>
+              </div>
             </ScrollReveal>
           ))}
         </div>
