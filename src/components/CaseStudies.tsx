@@ -177,7 +177,7 @@ export default function CaseStudies({ isProfessional: _isProfessional }: CaseStu
                         e.preventDefault();
                         window.open(project.link, '_blank', 'noopener,noreferrer');
                       }}
-                      className="inline-block text-blue-600 hover:text-blue-700 transition-colors duration-200"
+                      className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 transition-colors duration-200"
                       style={{
                         fontSize: 'clamp(0.9375rem, 1.05vw, 1.15rem)',
                         color: '#243e89',
@@ -186,7 +186,27 @@ export default function CaseStudies({ isProfessional: _isProfessional }: CaseStu
                         textUnderlineOffset: '3px'
                       }}
                     >
-                      View case study
+                      <span>View case study</span>
+                      <svg 
+                        width="16" 
+                        height="16" 
+                        viewBox="0 0 16 16" 
+                        fill="none" 
+                        xmlns="http://www.w3.org/2000/svg"
+                        style={{ 
+                          display: 'inline-block',
+                          verticalAlign: 'top',
+                          marginTop: '2px'
+                        }}
+                      >
+                        <path 
+                          d="M6 12L10 8L6 4" 
+                          stroke="currentColor" 
+                          strokeWidth="2" 
+                          strokeLinecap="round" 
+                          strokeLinejoin="round"
+                        />
+                      </svg>
                     </a>
                   </div>
                 </div>
