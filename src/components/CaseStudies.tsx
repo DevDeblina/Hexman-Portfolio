@@ -114,7 +114,7 @@ export default function CaseStudies({ isProfessional: _isProfessional }: CaseStu
                         style={{
                           fontSize: 'clamp(0.875rem, 1vw, 0.9375rem)',
                           fontWeight: 600,
-                          color: accentColor
+                          color: '#000000'
                         }}
                       >
                         {project.type}
