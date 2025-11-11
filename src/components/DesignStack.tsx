@@ -52,7 +52,7 @@ export default function DesignStack({ isProfessional }: DesignStackProps) {
               style={{
                 fontSize: 'clamp(2rem, 4vw, 2.75rem)',
                 fontWeight: 700,
-                color: accentColor,
+                color: '#000000',
                 lineHeight: 1.2
               }}
             >

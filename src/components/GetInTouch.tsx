@@ -70,7 +70,7 @@ export default function GetInTouch({ isProfessional }: GetInTouchProps) {
               style={{
                 fontSize: 'clamp(2rem, 4.5vw, 2.75rem)',
                 fontWeight: 700,
-                color: '#243E89',
+                color: '#000000',
                 lineHeight: 1.2
               }}
             >

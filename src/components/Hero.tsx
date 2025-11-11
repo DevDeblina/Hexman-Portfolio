@@ -19,38 +19,27 @@ export default function Hero({ isProfessional: _isProfessional }: HeroProps) {
               <h1 
                 className="mb-2"
                 style={{
-                  fontSize: 'clamp(2.5rem, 5.5vw, 4rem)',
-                  fontWeight: 700,
-                  color: '#243E89',
+                  fontSize: 'clamp(2.5rem, 5.5vw, 0.5rem)',
+                  color: '#64748B',
                   lineHeight: 1.1,
                   whiteSpace: 'nowrap'
                 }}
               >
-                Heyy, I'm Hexman
+                Heyy, I'm Hexman - Product & UI UX Designer
               </h1>
-              <p 
-                style={{
-                  fontSize: 'clamp(1.125rem, 2.5vw, 1.875rem)',
-                  fontWeight: 500,
-                  color: '#64748B',
-                  lineHeight: 1.3
-                }}
-              >
-                Product & UI UX Designer
-              </p>
             </div>
             
             {/* Description */}
             <p 
               className="max-w-2xl"
               style={{
-                fontSize: 'clamp(1rem, 1.8vw, 1.25rem)',
-                fontWeight: 400,
-                color: '#334155',
+                fontSize: 'clamp(2.5rem, 5.5vw, 2rem)',
+                fontWeight: 700,
+                color: '#000000',
                 lineHeight: 1.6
               }}
             >
-              I design exceptional web, app, and SaaS experiences that users love and enterprises trust
+              I Design Exceptional SaaS, App & Web Experience That Users Love & Enterprises Trust
             </p>
 
             {/* Action Buttons */}

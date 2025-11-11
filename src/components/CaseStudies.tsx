@@ -70,7 +70,7 @@ export default function CaseStudies({ isProfessional: _isProfessional }: CaseStu
               style={{
                 fontSize: 'clamp(2rem, 4vw, 2.75rem)',
                 fontWeight: 700,
-                color: accentColor,
+                color: '#000000',
                 lineHeight: 1.2
               }}
             >
@@ -151,7 +151,7 @@ export default function CaseStudies({ isProfessional: _isProfessional }: CaseStu
                     </h3>
 
                     {/* Tagline Tag */}
-                    <div className="mb-4">
+                    {/* <div className="mb-4">
                       <span 
                         className="inline-block px-3 py-1 rounded-md"
                         style={{
@@ -164,7 +164,7 @@ export default function CaseStudies({ isProfessional: _isProfessional }: CaseStu
                       >
                         {project.tagline}
                       </span>
-                    </div>
+                    </div> */}
 
                     {/* Description */}
                     <p 
