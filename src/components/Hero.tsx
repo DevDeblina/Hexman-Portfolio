@@ -18,7 +18,7 @@ export default function Hero({ isProfessional: _isProfessional }: HeroProps) {
             <div className="space-y-3 sm:space-y-3">
               <h1 
                 style={{
-                  fontSize: 'clamp(1.25rem, 4vw, 2.13rem)',
+                  fontSize: 'clamp(1.25rem, 4vw, 2.01rem)',
                   color: '#64748B',
                   lineHeight: 1.2,
                 }}
