@@ -93,7 +93,21 @@ export default function CaseStudies({ isProfessional: _isProfessional }: CaseStu
         <div className="space-y-8">
           {caseStudies.map((project, index) => (
             <ScrollReveal key={project.id} animation="fadeUp" delay={index * 0.1}>
-              <div className="group block bg-white rounded-2xl overflow-hidden border-2 border-gray-100 hover:border-[#243E89] hover:shadow-2xl transition-all duration-300">
+              <div 
+                className="group block bg-white rounded-2xl overflow-hidden border-2 border-gray-100 hover:border-[#243E89] hover:shadow-2xl transition-all duration-300"
+                onMouseEnter={(e) => {
+                  const svgWrapper = e.currentTarget.querySelector('.svg-icon-wrapper');
+                  if (svgWrapper) {
+                    (svgWrapper as HTMLElement).style.transform = 'translateY(-8px)';
+                  }
+                }}
+                onMouseLeave={(e) => {
+                  const svgWrapper = e.currentTarget.querySelector('.svg-icon-wrapper');
+                  if (svgWrapper) {
+                    (svgWrapper as HTMLElement).style.transform = 'translateY(0)';
+                  }
+                }}
+              >
                 <div className="flex flex-col md:flex-row md:h-72">
                   {/* Project Thumbnail - Left Side */}
                   <div 
@@ -186,17 +200,23 @@ export default function CaseStudies({ isProfessional: _isProfessional }: CaseStu
                       }}
                     >
                       <span>View case study</span>
-                      <svg 
-                        width="16" 
-                        height="16" 
-                        viewBox="0 0 16 16" 
-                        fill="none" 
-                        xmlns="http://www.w3.org/2000/svg"
-                        style={{ 
-                          display: 'inline-block',
-                          verticalAlign: 'top',
+                      <span 
+                        className="svg-icon-wrapper inline-flex items-center transition-transform duration-300 ease-in-out"
+                        style={{
+                          transform: 'translateY(0)',
                         }}
                       >
+                        <svg 
+                          width="16" 
+                          height="16" 
+                          viewBox="0 0 16 16" 
+                          fill="none" 
+                          xmlns="http://www.w3.org/2000/svg"
+                          style={{ 
+                            display: 'inline-block',
+                            verticalAlign: 'top',
+                          }}
+                        >
                         <g id="Icon">
                             <path 
                               d="M 6.125 6.125 L 14.875 6.125 L 14.875 14.875" 
@@ -217,7 +237,8 @@ export default function CaseStudies({ isProfessional: _isProfessional }: CaseStu
                               fill="none"
                             />
                           </g>
-                      </svg>
+                        </svg>
+                      </span>
                     </a>
                   </div>
                 </div>
