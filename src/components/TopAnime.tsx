@@ -76,7 +76,7 @@ export default function TopAnime({ isProfessional: _isProfessional }: TopAnimePr
               delay={index * 0.15}
             >
               <div 
-                className="group relative bg-white rounded-xl overflow-hidden border-2 border-gray-100 hover:border-[#243E89] transition-all duration-500 hover:shadow-2xl"
+                className="group relative bg-white rounded-xl overflow-hidden border-2 border-gray-100 hover:border-[#f3f4f6] transition-all duration-500 hover:shadow-2xl"
               >
                 {/* Rank Badge with white background and black outline */}
                 <div 
@@ -107,7 +107,7 @@ export default function TopAnime({ isProfessional: _isProfessional }: TopAnimePr
                 {/* Anime Info - Compact */}
                 <div className="p-5">
                   <h3 
-                    className="mb-1 group-hover:text-[#243E89] transition-colors duration-300"
+                    className="mb-1 group-hover:text-[#f3f4f6] transition-colors duration-300"
                     style={{
                       fontSize: 'clamp(1.125rem, 1.5vw, 1.25rem)',
                       fontWeight: 700,
@@ -143,7 +143,7 @@ export default function TopAnime({ isProfessional: _isProfessional }: TopAnimePr
               delay={index * 0.15}
             >
               <div 
-                className={`group relative bg-white rounded-xl overflow-hidden border-2 border-gray-100 hover:border-[#243E89] transition-all duration-500 hover:shadow-2xl ${
+                className={`group relative bg-white rounded-xl overflow-hidden border-2 border-gray-100 hover:border-[#f3f4f6] transition-all duration-500 hover:shadow-2xl ${
                   anime.rank === 1 ? 'md:-translate-y-6' : ''
                 }`}
               >
@@ -176,7 +176,7 @@ export default function TopAnime({ isProfessional: _isProfessional }: TopAnimePr
                 {/* Anime Info - Compact */}
                 <div className="p-5">
                   <h3 
-                    className="mb-1 group-hover:text-[#243E89] transition-colors duration-300"
+                    className="mb-1 group-hover:text-[#f3f4f6] transition-colors duration-300"
                     style={{
                       fontSize: 'clamp(1.125rem, 1.5vw, 1.25rem)',
                       fontWeight: 700,

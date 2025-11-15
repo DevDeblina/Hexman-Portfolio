@@ -93,7 +93,7 @@ export default function CaseStudies({ isProfessional: _isProfessional }: CaseStu
         <div className="space-y-8">
           {caseStudies.map((project, index) => (
             <ScrollReveal key={project.id} animation="fadeUp" delay={index * 0.1}>
-              <div className="group block bg-white rounded-2xl overflow-hidden border-2 border-gray-100 transition-all duration-300">
+              <div className="group block bg-white rounded-2xl overflow-hidden border-2 border-gray-100 hover:border-[#243E89] hover:shadow-2xl transition-all duration-300">
                 <div className="flex flex-col md:flex-row md:h-72">
                   {/* Project Thumbnail - Left Side */}
                   <div 
@@ -132,11 +132,10 @@ export default function CaseStudies({ isProfessional: _isProfessional }: CaseStu
 
                     {/* Title */}
                     <h3 
-                      className="mb-3"
+                      className="mb-3 text-[#1E293B] group-hover:text-[#243E89] transition-colors duration-300"
                       style={{
                         fontSize: 'clamp(1.375rem, 2vw, 1.75rem)',
                         fontWeight: 700,
-                        color: '#1E293B',
                         lineHeight: 1.3
                       }}
                     >
@@ -196,16 +195,28 @@ export default function CaseStudies({ isProfessional: _isProfessional }: CaseStu
                         style={{ 
                           display: 'inline-block',
                           verticalAlign: 'top',
-                          marginTop: '2px'
                         }}
                       >
-                        <path 
-                          d="M6 12L10 8L6 4" 
-                          stroke="currentColor" 
-                          strokeWidth="2" 
-                          strokeLinecap="round" 
-                          strokeLinejoin="round"
-                        />
+                        <g id="Icon">
+                            <path 
+                              d="M 6.125 6.125 L 14.875 6.125 L 14.875 14.875" 
+                              id="Vector" 
+                              stroke="#243E89" 
+                              strokeLinecap="round" 
+                              strokeLinejoin="round" 
+                              strokeWidth="2" 
+                              fill="none"
+                            />
+                            <path 
+                              d="M 6.125 14.875 L 14.875 6.125" 
+                              id="Vector_2" 
+                              stroke="#243E89" 
+                              strokeLinecap="round" 
+                              strokeLinejoin="round" 
+                              strokeWidth="2" 
+                              fill="none"
+                            />
+                          </g>
                       </svg>
                     </a>
                   </div>

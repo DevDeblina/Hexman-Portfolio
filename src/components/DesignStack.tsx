@@ -3,7 +3,8 @@ import figmaLogo from '../assets/864b2b20145693fb1d67f53882e1425764f1c10d.png';
 import chatgptLogo from '../assets/bf6932b1e8a0bca990079d98113e03f22573f4bc.png';
 import lovableLogo from '../assets/e460077ee2c5de12e5eb188527983b5df5250c38.png';
 import miroLogo from '../assets/eeacb2ebae0e5701f05bfb842feb627bd8f17d04.png';
-import canvaLogo from '../assets/0f83bccc4f107c3c7c7a543b06373e91329c31a0.png';
+import claudeLogo from '../assets/61435a7ed74cd20dc05d416138617d006dce7d8a.png';
+import framerLogo from '../assets/2d68da35cdc694a1f30033a6b4c8add1ed73c7fe.png';
 
 
 const tools = [
@@ -18,9 +19,14 @@ const tools = [
     scale: 0.75, // Smaller to match others visually
   },
   {
+    name: 'Claude',
+    logo: claudeLogo,
+    scale: 0.75, // Smaller to match others visually
+  },
+  {
     name: 'Lovable',
     logo: lovableLogo,
-    scale: 0.75, // Smaller to match others visually
+    scale: 0.75,
   },
   {
     name: 'Miro',
@@ -28,8 +34,8 @@ const tools = [
     scale: 1,
   },
   {
-    name: 'Canva',
-    logo: canvaLogo,
+    name: 'Framer',
+    logo: framerLogo,
     scale: 1,
   },
 ];
@@ -72,7 +78,7 @@ export default function DesignStack({ isProfessional }: DesignStackProps) {
         </ScrollReveal>
 
         {/* Tools Grid */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8 md:gap-12">
+        <div className="flex flex-row flex-wrap justify-between items-center gap-8 md:gap-12">
           {tools.map((tool, index) => (
             <ScrollReveal 
               key={index} 
