@@ -78,14 +78,14 @@ export default function DesignStack({ isProfessional }: DesignStackProps) {
         </ScrollReveal>
 
         {/* Tools Grid */}
-        <div className="flex flex-row flex-wrap justify-between items-center gap-8 md:gap-12">
+        <div className="flex flex-row flex-wrap justify-center md:justify-between items-center gap-6 md:gap-8 lg:gap-12">
           {tools.map((tool, index) => (
             <ScrollReveal 
               key={index} 
               animation="fadeUp" 
               delay={index * 0.1}
             >
-              <div className="group flex flex-col items-center gap-4 transition-all duration-300 hover:-translate-y-2">
+              <div className="group flex flex-col items-center gap-4 transition-all duration-300 hover:-translate-y-2 flex-shrink-0">
                 {/* Logo Container */}
                 <div className="relative w-20 h-20 md:w-24 md:h-24 flex items-center justify-center transition-transform duration-300 group-hover:scale-110">
                   <img 

@@ -94,7 +94,8 @@ export default function CaseStudies({ isProfessional: _isProfessional }: CaseStu
           {caseStudies.map((project, index) => (
             <ScrollReveal key={project.id} animation="fadeUp" delay={index * 0.1}>
               <div 
-                className="group block bg-white rounded-2xl overflow-hidden border-2 border-gray-100 hover:border-[#243E89] hover:shadow-2xl transition-all duration-300 cursor-pointer"
+                className="group block bg-white rounded-2xl overflow-hidden border-2 border-gray-100 hover:border-[#243E89] hover:shadow-2xl transition-all duration-300"
+                style={{ cursor: 'pointer' }}
                 onClick={() => {
                   window.open(project.link, '_blank', 'noopener,noreferrer');
                 }}
@@ -111,20 +112,20 @@ export default function CaseStudies({ isProfessional: _isProfessional }: CaseStu
                   }
                 }}
               >
-                <div className="flex flex-col md:flex-row md:h-72">
+                <div className="flex flex-col md:flex-row md:h-72 cursor-pointer">
                   {/* Project Thumbnail - Left Side */}
                   <div 
-                    className="relative w-full md:w-2/5 lg:w-5/12 h-64 md:h-72 overflow-hidden"
+                    className="relative w-full md:w-2/5 lg:w-5/12 h-64 md:h-72 overflow-hidden cursor-pointer"
                   >
                     <img
                       src={project.thumbnail}
                       alt={project.title}
-                      className="w-full h-full object-cover object-top"
+                      className="w-full h-full object-cover object-top cursor-pointer"
                     />
                   </div>
 
                   {/* Project Details - Right Side */}
-                  <div className="w-full md:w-3/5 lg:w-7/12 p-6 md:p-8 flex flex-col justify-center md:h-72">
+                  <div className="w-full md:w-3/5 lg:w-7/12 p-6 md:p-8 flex flex-col justify-center md:h-72 cursor-pointer">
                     {/* Type & Context */}
                     <div className="flex items-center gap-2 flex-wrap mb-3">
                       <span 
