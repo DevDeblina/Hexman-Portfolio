@@ -94,7 +94,10 @@ export default function CaseStudies({ isProfessional: _isProfessional }: CaseStu
           {caseStudies.map((project, index) => (
             <ScrollReveal key={project.id} animation="fadeUp" delay={index * 0.1}>
               <div 
-                className="group block bg-white rounded-2xl overflow-hidden border-2 border-gray-100 hover:border-[#243E89] hover:shadow-2xl transition-all duration-300"
+                className="group block bg-white rounded-2xl overflow-hidden border-2 border-gray-100 hover:border-[#243E89] hover:shadow-2xl transition-all duration-300 cursor-pointer"
+                onClick={() => {
+                  window.open(project.link, '_blank', 'noopener,noreferrer');
+                }}
                 onMouseEnter={(e) => {
                   const svgWrapper = e.currentTarget.querySelector('.svg-icon-wrapper');
                   if (svgWrapper) {
@@ -188,6 +191,7 @@ export default function CaseStudies({ isProfessional: _isProfessional }: CaseStu
                       href={project.link}
                       onClick={(e) => {
                         e.preventDefault();
+                        e.stopPropagation();
                         window.open(project.link, '_blank', 'noopener,noreferrer');
                       }}
                       className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 transition-colors duration-200"
